@@ -30,3 +30,24 @@ window.onload = function () {
     
     startTimer(timeInSeconds, display);
 };
+// 1. Select the element
+  const numberElement = document.getElementById('zone-number');
+
+  // 2. Create a variable to keep track of the count
+  let currentCount = 2;
+
+  // 3. Add the click listener
+  numberElement.addEventListener('click', function() {
+    
+    // Increment the count
+    currentCount = currentCount + 1;
+
+    // Logic: If it goes over 3, reset to 1
+    if (currentCount > 3) {
+      currentCount = 1;
+    }
+
+    // Update the text on the screen
+    numberElement.innerText = currentCount;
+    
+  });
