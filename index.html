@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Way Ticket</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="app-container">
+      <div class="top-bar">
+        <header>
+            <div class="back-arrow">
+                <svg viewBox="0 0 24 24">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                </svg>
+            </div>
+            <div class="header-title">One Way Ticket</div>
+        </header>
+      </div>
+        
+        <main class="ticket-card">
+            
+            <div class="qr-wrapper">
+                <div class="qr-code"></div>
+            </div>
+            <div class="enlarge-text">Tap to enlarge</div>
+
+            <hr class="dashed-line">
+
+            <h2 class="ticket-type">INTRASTATE</h2>
+            <div class="zone-number">2</div>
+            <div class="zone-label">ZONE RIDE</div>
+            <div class="passenger-count">1 Adult</div>
+
+            <div class="spacer"></div>
+
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+
+            <div class="timer-text">Expires in <span id="timer">29:59</span></div>
+
+            <a class="footer-link">View Onboard Validator Instructions</a>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
