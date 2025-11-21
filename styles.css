@@ -141,12 +141,13 @@ header {
     letter-spacing: -0.5px;
 }
 
-.zone-number {
+#zone-number {
     font-size: 6.5rem;
     font-weight: 800;
     color: #000;
     line-height: 1;
     margin: 5px 0;
+    cursor: pointer;
 }
 
 .zone-label {
